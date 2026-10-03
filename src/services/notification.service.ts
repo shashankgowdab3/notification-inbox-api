@@ -98,4 +98,11 @@ export function seedNotifications() {
       Date.now() - (25 - i) * 1000
     );
   }
+
+  createNotification({
+    userId: "user2",
+    kind: "job_succeeded",
+    title: "User 2 notification",
+    body: "This belongs to user2"
+  });
 }
