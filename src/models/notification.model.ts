@@ -1,0 +1,11 @@
+export interface Notification {
+  id: string;
+  userId: string;
+  kind: string;
+  title: string;
+  body: string;
+  resourceType?: string;
+  resourceId?: string;
+  readAt: Date | null;
+  createdAt: Date;
+}
